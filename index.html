@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body>
+<body class="container">
 <header class="container__titulo">
     <div>
         <img class="logomarca" src="./assets/pngimg.com - netflix_PNG25.png" alt="Logo Netflix">
     </div>
     <div class="container__titulo__idioma">
-        <select class="select__idioma" >
-            <option class="select_idioma_selecao" selected disabled></option>
+        <select class="select__idioma">
+            <!--            <option class="select_idioma_selecao" selected disabled>Idioma</option>-->
             <option class="select_idioma_selecao" value="0">Português</option>
             <option class="select_idioma_selecao" value="1">English</option>
         </select>
-        <a class="entrar" href="#">Entrar</a>
+        <a class="entrar" href="#" onclick="logAqui()">Entrar</a>
     </div>
 </header>
-<main class="container">
+<main  class="container">
     <div class="texto">
         <p class="paragrafo">Filmes, séries e muito mais, sem limites</p>
         <br>
@@ -34,12 +34,25 @@
     </div>
     <div class="login">
         <input class="input__email" type="text" placeholder="Email">
-        <a href="#" class="btn__entrar">Vamos Lá <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronRightStandard" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>
+        <a href="#" class="btn__entrar">Vamos Lá
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24" height="24"
+                 data-icon="ChevronRightStandard" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                      fill="currentColor"></path>
+            </svg>
         </a>
     </div>
 </main>
 <footer></footer>
 
+<script>
+    function logAqui() {
+        const select = document.querySelector('select');
+        console.log(select.value);
+    }
+
+</script>
 </body>
 </html>
 
