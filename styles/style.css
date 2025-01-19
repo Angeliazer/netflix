@@ -140,38 +140,41 @@ body:after {
     color: white;
     width: 100%;
     margin: auto;
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
     text-align: center;
 }
 
 .login {
     display: flex;
-    width: 38%;
+    width: 90%;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+    padding-left: 25rem;
+    padding-right: 25rem;
 }
 
 .input__email {
     font-size: 1rem;
-    width: 65%;
     border-radius: 0.30rem;
     background-color: rgba(0, 0, 0, .5);
     color: white;
     border: 1px solid gray;
-    padding-left: 10px;
+    padding-left: 0.9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 60%;
 }
 
 .input__email:focus {
     border: 1px solid gray;
-    padding-left: 10px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: 1rem 1rem;
 }
 
 .btn__entrar {
     text-decoration: none;
-    font-size: 1.5rem;
     background-color: #e5070c;
-    width: 35%;
+    width: 40%;
     text-align: center;
     color: white;
     padding: 1rem 1rem;
@@ -182,33 +185,24 @@ body:after {
     gap: 5px;
 }
 
-@media (max-width: 485px) {
-    .login {
-        width: 75%;
-    }
-
-    .btn__entrar {
-        padding: 0.5rem 0.5rem;
-        width: 45%;
-    }
-    .input__email {
-        padding: 0.1rem 0.1rem;
-        width: 35%;
-    }
-}
 
 @media (max-width: 1309px) {
     .login{
-        width: 85%;
-        margin: 5%;
-    },
+        flex-direction: column;
+        width: 90%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
     .btn__entrar {
-        width: 55%;
-        font-size: 0.2rem;
+        width: 100%;
     }
     .input__email {
-        width: 45%;
-        font-size: 0.2rem;
+        width: 100%;
+    }
+    .select__idioma{
+        padding: 1px 5px 1px 5px;
     }
 }
 
